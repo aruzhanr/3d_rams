@@ -1,6 +1,9 @@
 .App {
-  text-align: center;
-}
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+ }
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(241, 229, 229, 0.096);
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  transition: 0.5s;
+}
+
+.modal_content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.hotspot{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+
+.image{
+  border: 5px groove #ffdd00;
+}
+
+.content {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 0.6%;
+  width: 40;
+  height: 40;
+}
+
+.tooltip {
+  position: absolute;
+  top: 45%;
+  left: 54%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hotspot_content:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show {
+  background-color: #33333300;
+  color: #fffb00;
+}
+
+.popImg {
+  height: 90%;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 3%;
+  pointer-events: auto;
+  border-radius: 5%;
+}
+
+.popImgs {
+  height: 55%;
+  width: 50%;
+  pointer-events: auto;
+  background-color: rgba(240, 248, 255, 0.448);
+  border-radius: 3%;
+}
+
+.icon_close {
+  color: black;
+  margin-top: 1%;
+  margin-left: 94%;
+  margin-bottom: -2%;
 }
